@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as actionCreators from '../actions/users.actions';
 import {  //reactStrap
   Collapse,
   Navbar,
@@ -27,6 +29,11 @@ class Topnav extends Component{
       this.setState({
         isOpen: !this.state.isOpen
       });
+    }
+
+    handleDelete(e){
+      e.preventDefault();
+      this.props.deleteAccount((this.props.thisUser && this.props.thisUser.id))
     }
 
     render() {
@@ -58,12 +65,11 @@ class Topnav extends Component{
                             Edit Account
                           </Link>
                         </DropdownItem>
-                        <DropdownItem>
-                          <Link
-                            to={'/login'}
-                          >
+                        <DropdownItem
+                          onClick={(e)=>this.handleDelete(e)}
+                        >
+
                             Delete Account
-                          </Link>
                         </DropdownItem>
                       </DropdownMenu>
                     </UncontrolledDropdown>
@@ -119,4 +125,10 @@ const mapStateToProps = state =>{
   }
 }
 
-export default connect(mapStateToProps, null)(Topnav);
+const mapDispatchToProps = dispatch =>{
+  return {
+    deleteAccount: bindActionCreators(actionCreators.deleteAccount, dispatch)
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Topnav);

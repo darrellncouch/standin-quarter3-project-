@@ -50,6 +50,7 @@ class App extends Component {
           <Topnav
             user={this.props.users}
             appState={this.state}
+            thisUser={this.props.users && this.props.users.find(user => user.id == this.state.user_id)}
            />
             <Switch>
               <Route exact path="/" component={Splash}/>

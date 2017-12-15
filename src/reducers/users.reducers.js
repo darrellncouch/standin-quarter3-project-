@@ -14,6 +14,16 @@ export default (state = [], action )=>{
     case actionTypes.UPDATE_ACCOUNT_SUCCESS:
       return [...action.payload.data];
 
+    case actionTypes.CREATE_ACCOUNT_PENDING:
+      return state;
+    case actionTypes.CREATE_ACCOUNT_SUCCESS:
+      return [...action.payload.data];
+
+    case actionTypes.DELETE_ACCOUNT_PENDING:
+      return state;
+    case actionTypes.DELETE_ACCOUNT_SUCCESS:
+      return [...action.payload.data];
+
     default:
       return state;
   }

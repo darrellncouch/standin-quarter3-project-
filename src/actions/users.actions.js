@@ -34,3 +34,25 @@ import * as actionTypes from '../actiontypes/users.actiontypes';
      })
    }
  }
+
+ export const createAccount = (state) =>{
+   return async (dispatch)=>{
+     dispatch({type: actionTypes.CREATE_ACCOUNT_PENDING})
+     let newUser = await axios.post('http://localhost:8060/new-user', state)
+     dispatch({
+       type: actionTypes.CREATE_ACCOUNT_SUCCESS,
+       payload: newUser
+     })
+   }
+ }
+
+ export const deleteAccount = (id) =>{
+   return async(dispatch)=>{
+     dispatch({type: actionTypes.DELETE_ACCOUNT_PENDING})
+     let del = await axios.delete(`http://localhost:8060/user/${id}`)
+     dispatch({
+       type: actionTypes.DELETE_ACCOUNT_SUCCESS,
+       payload: del
+     })
+   }
+ }

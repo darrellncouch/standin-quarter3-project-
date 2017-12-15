@@ -24,7 +24,7 @@ class Edit extends Component{
 
   handleSubmit(e){
     e.preventDefault();
-    this.props.updateAccount(this.props.thisuser.id, this.state)
+    this.props.updateAccount((this.props.thisUser && this.props.thisUser.id), this.state)
   }
 
   render(){
@@ -35,7 +35,7 @@ class Edit extends Component{
         <h3 className="top-marg-lg">Edit Account Info</h3>
         <Row>
           <Col className="top-marg-sm" sm={{size: 10, offset:1}}>
-            <form onSubmin={this.handleSubmit}>
+            <form onSubmit={(e)=>this.handleSubmit(e)}>
               <Row>
                 <Col sm={6}>
                   <input
@@ -138,4 +138,4 @@ const mapDispatchToProps = dispatch =>{
   }
 }
 
-export default connect(mapStateToProps, null)(Edit);
+export default connect(mapStateToProps, mapDispatchToProps)(Edit);
