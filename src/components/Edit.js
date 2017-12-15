@@ -22,7 +22,7 @@ class Edit extends Component{
     synth: this.props.thisUser && this.props.thisUser.synth
   }
 
-  handleSubmit(e){
+  handleSubmit(e){ 
     e.preventDefault();
     this.props.updateAccount((this.props.thisUser && this.props.thisUser.id), this.state)
   }

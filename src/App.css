@@ -53,7 +53,11 @@ body{
 .top-marg-lg{
   margin-top: 5em;
 }
-
+.top-marg-xlg{
+  margin-top: 6em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
 .bottom-marg-sm{
   margin-bottom: 1em;
 }
@@ -94,10 +98,23 @@ img{
 
 .text-cyan{
   color: #2D8DD6;
+  border: 2px solid #2D8DD6;
+  border-bottom: 2px solid #2D8DD6;
+  padding: 1em;
 }
 
 .text-purple{
   color: #915Db1;
+  border: 2px solid #915Db1;
+  border-bottom: 2px solid #915Db1;
+  padding: 1em;
+
+}
+
+.border-white{
+  border: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 1em;
 }
 
 .footer{

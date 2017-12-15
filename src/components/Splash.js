@@ -34,7 +34,7 @@ class Splash extends Component{
         </Row>
         <Row>
           <Col xs={12} sm={12} md={6} >
-            <h3 className="text-cyan">Some placeholder text</h3>
+            <h3 className="text-cyan top-marg-xlg">Tired of playing guitar in your room like a loner?</h3>
           </Col>
           <Col xs={12} sm={12} md={6} className="">
             <img src="http://www.eastmesaguitarlessons.com/wp-content/uploads/2015/08/Depositphotos_13155518_m-2015.jpg" alt="" className="img-responsive"/>
@@ -45,12 +45,12 @@ class Splash extends Component{
             <img src="https://images.pexels.com/photos/354304/pexels-photo-354304.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" className="img-responsive"/>
           </Col>
           <Col xs={12} sm={12} md={6} className="bkgnd-cyan">
-          <h3 className="text-white">Some placeholder text</h3>
+          <h3 className="text-white top-marg-xlg border-white">Do you need to replace your drummer because yours can't keep time?</h3>
           </Col>
         </Row>
         <Row>
           <Col xs={12} sm={12} md={6} >
-          <h3 className="text-purple">Some placeholder text</h3>
+          <h3 className="text-purple top-marg-xlg">Maybe even hire studio players so your EP doesnt suck.</h3>
           </Col>
           <Col xs={12} sm={12} md={6} className="">
             <img src="https://cache.diomedia.com/230h/01/B2/PV/01B2-PV4M.jpg" alt="" className="img-responsive"/>
@@ -61,7 +61,7 @@ class Splash extends Component{
             <img src="http://gmi.ge/wp-content/uploads/2015/02/N2.jpg" alt="" className="img-responsive"/>
           </Col>
           <Col xs={12} sm={12} md={6} className="bkgnd-purple">
-          <h3 className="text-white">Some placeholder text</h3>
+          <h3 className="text-white top-marg-xlg border-white">Find an audio engineer to auto tune your tone deaf voice</h3>
           </Col>
         </Row>
       </div>
