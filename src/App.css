@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+  overflow-x:  hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 20px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.jumbotron{
+  background-color: #6CBC7A;
+  color: white;
+  margin-bottom: 0px !important;
+}
+
+.top-marg-sm{
+  margin-top: 1em;
+}
+
+.top-marg-md{
+  margin-top: 2em;
+}
+.top-marg-lg{
+  margin-top: 5em;
+}
+
+.bottom-marg-sm{
+  margin-bottom: 1em;
+}
+
+.bottom-marg-md{
+  margin-bottom: 2em;
+}
+.bottom-marg-lg{
+  margin-bottom: 5em;
+}
+
+#jumbotron-btn{
+  background-color: #6CBC7A!important;
+  border: 1px solid white !important;
+  color: white;
+}
+
+#jumbotron-btn:hover{
+  background-color: white !important;
+  color: #6CBC7A;
+}
+
+.hello{
+  border: 1px solid black;
+}
+
+img{
+  width: 100% !important;
+}
+
+.bkgnd-cyan{
+  background-color: #2D8DD6;
+}
+
+.bkgnd-purple{
+  background-color: #915Db1;
+}
+
+.text-cyan{
+  color: #2D8DD6;
+}
+
+.text-purple{
+  color: #915Db1;
+}
+
+.footer{
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-item:hover{
+  background-color: #6CBC7A;
+  color: white;
+}
+
+.no-pad{
+  padding: 0px !important;
+}
+.marg-right-sm{
+  margin-right: 1em;
+}
+
+.scroll-y{
+  overflow-y: scroll !important;
+}
+.primary_content{
+  height: 100%;
+  background-color: #F1F1EE;
+}
+.fixed{
+  position: fixed;
+}
+
+.stars{
+  position: relative;
+  top: 1.2em;
+}
+.bkgnd{
+  background-color: #f2f2f2;
+}
+
+.review-preview{
+  height: 150px;
+  border: 1px solid #f2f2f2;
+}
+
+.sidebar{
+  background-color: #E8E8E6;
+}
+.w100{
+  width: 100% !important;
+}
