@@ -5,7 +5,7 @@ import * as actionTypes from '../actiontypes/users.actiontypes';
  export const getUsers = ()=>{
    return async (dispatch)=>{
      dispatch({type: actionTypes.GET_USERS_PENDING})
-     let users = await axios.get('http://localhost:8060/')
+     let users = await axios.get('https://standin-backend.herokuapp.com/')
      dispatch({
        type: actionTypes.GET_USERS_SUCCESS,
        payload: users
@@ -16,7 +16,7 @@ import * as actionTypes from '../actiontypes/users.actiontypes';
  export const getReviews = (id) =>{
   return async (dispatch)=>{
     dispatch({type: actionTypes.GET_REVIEWS_PENDING})
-    let reviews = await axios.get('http://localhost:8060/reviews')
+    let reviews = await axios.get('https://standin-backend.herokuapp.com/reviews')
     dispatch({
       type: actionTypes.GET_REVIEWS_SUCCESS,
       payload: reviews
@@ -27,7 +27,7 @@ import * as actionTypes from '../actiontypes/users.actiontypes';
  export const updateAccount = (id, state) =>{
    return async (dispatch)=>{
      dispatch({type: actionTypes.UPDATE_ACCOUNT_PENDING})
-     let update = await axios.patch(`http://localhost:8060/user/${id}`, state)
+     let update = await axios.patch(`https://standin-backend.herokuapp.com/user/${id}`, state)
      dispatch({
        type: actionTypes.UPDATE_ACCOUNT_SUCCESS,
        payload: update
@@ -38,7 +38,7 @@ import * as actionTypes from '../actiontypes/users.actiontypes';
  export const createAccount = (state) =>{
    return async (dispatch)=>{
      dispatch({type: actionTypes.CREATE_ACCOUNT_PENDING})
-     let newUser = await axios.post('http://localhost:8060/new-user', state)
+     let newUser = await axios.post('https://standin-backend.herokuapp.com/new-user', state)
      dispatch({
        type: actionTypes.CREATE_ACCOUNT_SUCCESS,
        payload: newUser
@@ -49,7 +49,7 @@ import * as actionTypes from '../actiontypes/users.actiontypes';
  export const deleteAccount = (id) =>{
    return async(dispatch)=>{
      dispatch({type: actionTypes.DELETE_ACCOUNT_PENDING})
-     let del = await axios.delete(`http://localhost:8060/user/${id}`)
+     let del = await axios.delete(`https://standin-backend.herokuapp.com/user/${id}`)
      dispatch({
        type: actionTypes.DELETE_ACCOUNT_SUCCESS,
        payload: del
